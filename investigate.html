@@ -14715,53 +14715,7 @@ header{flex-wrap:wrap}nav{flex-wrap:wrap}.logo{height:64px;max-width:100%}
           surroundings, or separate container and payload temperatures.
         </div>
       </section>
-      <section class="card" style="margin-top: 20px">
-        <h3>Evidence, method, and limitations</h3>
-        <p style="font-size: 13px">
-          Built-in measurements: Elizabeth Gieseking,
-          <a
-            href="https://jwilson.coe.uga.edu/EMAT6680Fa2014/Gieseking/Exploration%2012/Newton%27s%20Law%20of%20Cooling.htm"
-            target="_blank"
-            rel="noopener"
-            >Newton’s Law of Cooling — An Experimental Investigation</a
-          >, hosted by the University of Georgia. The published table gives
-          three open-beaker water cooling records and a 23°C environment. The
-          original data are embedded without interpolation; the smooth curve is
-          a model prediction.
-        </p>
-        <div class="note">
-          The published experiment is an educational cooling study, not a
-          medical-shipment test. It checks the fitting workflow and reveals
-          model limitations. It does not validate an insulated package or the
-          earlier proposed two-temperature model.
-        </div>
-        <details open>
-          <summary>What is calculated?</summary>
-          <p style="font-size: 13px">
-            We keep the first measured temperature as the start. Then we find
-            the one number $\tau$ (the response time, in minutes) that makes the
-            curve $T(t)=T_a+(T_0-T_a)e^{-(t-t_0)/\tau}$ best match the earlier
-            readings. The later readings are held back and used only to check
-            the prediction. RMSE and MAE are the typical errors in °C (RMSE
-            penalises big misses more). Re-trying many splits turns this into a
-            rough check, not a final test.
-          </p>
-        </details>
-        <details>
-          <summary>What would a stronger follow-up experiment test?</summary>
-          <p style="font-size:13px">Collect independent runs with measured surroundings, container temperature and payload temperature. Compare the one-temperature and two-temperature models on a fixed evaluation procedure. Extra parameters should improve predictions and have an identifiable physical meaning. The current water measurements do not establish that the two-temperature model is better.</p>
-        </details>
-        <details>
-          <summary>What can be claimed?</summary>
-          <p style="font-size: 13px">
-            This page shows how well a simple cooling equation fits published
-            water data, and how big the errors are on later readings. It assumes
-            constant surroundings, one uniform temperature and fixed properties.
-            It does not prove anything about medical shipments and gives no
-            confidence interval.
-          </p>
-        </details>
-      </section>
+      
       <div class="footer">
         SHIELD · Calculations run locally in your browser; CSV contents are not
         uploaded. Sources and settings are included in the downloadable
